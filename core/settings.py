@@ -43,7 +43,8 @@ DEFAULT_APPS = [
 PROJECTS_APPS = [
     'categories',
     'products',
-    'users'
+    'users',
+    'cart',
 ]
 
 THIRD_PARTY_APPS = [
