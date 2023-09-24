@@ -1,0 +1,17 @@
+.content-category-products {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    height: fit-content;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+}
+
+
+.content-category-products>li>div>a {
+    text-decoration: none;
+}
+
+.content-category-products>li>div>div>h5>a {
+    text-decoration: none;
+}
