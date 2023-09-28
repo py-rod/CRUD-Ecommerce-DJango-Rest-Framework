@@ -21,7 +21,7 @@ class Order(models.Model):
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.created
+        return f"{self.user} > {self.created}"
 
 
 class OrderItem(models.Model):
@@ -34,7 +34,7 @@ class OrderItem(models.Model):
     image = models.CharField(max_length=200, null=True, blank=True)
 
     def __str__(self):
-        return str(self.title)
+        return f"{self.product}"
 
 
 class ShippingAddress(models.Model):
@@ -48,4 +48,4 @@ class ShippingAddress(models.Model):
         max_digits=7, decimal_places=2, null=True, blank=True)
 
     def __str__(self):
-        return str(self.address)
+        return f"{self.address}"

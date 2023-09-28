@@ -13,7 +13,7 @@ class UserSerializerGet(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
         fields = ["id", "username", "first_name",
-                  "last_name", "email", "image", "description"]
+                  "last_name", "email", "image", "description", "is_superuser", "is_active", "is_staff"]
 
 
 class UserSerializerUpdateData(serializers.ModelSerializer):

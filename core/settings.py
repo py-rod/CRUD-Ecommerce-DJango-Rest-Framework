@@ -49,7 +49,8 @@ PROJECTS_APPS = [
 
 THIRD_PARTY_APPS = [
     'drf_yasg',
-    'rest_framework_simplejwt',
+    'rest_framework',
+    'rest_framework_simplejwt.token_blacklist',
     "corsheaders",
 ]
 
@@ -158,7 +159,7 @@ AUTH_USER_MODEL = "users.CustomUser"
 
 # PARA EL CONSUMO DE REACT
 CORS_ALLOWED_ORIGINS = [
-    "https://localhost:3000"
+    "https://localhost:5173"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
